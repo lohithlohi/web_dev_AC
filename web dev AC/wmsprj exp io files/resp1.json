@@ -1,0 +1,246 @@
+{
+    "type": "FeatureCollection",
+    "properties": {
+      "mode": "truck",
+      "params": {
+        "mode": "truck",
+        "agents": [
+          {
+            "start_location": [
+              79.32705929999999,
+              10.95712279949556
+            ],
+            "end_location": [
+              79.18791975761872,
+              10.890517199490896
+            ],
+            "pickup_capacity": 10000
+          },
+          {
+            "start_location": [
+              79.32705929999999,
+              10.95712279949556
+            ],
+            "end_location": [
+              79.18791975761872,
+              10.890517199490896
+            ],
+            "pickup_capacity": 10000
+          },
+          {
+            "start_location": [
+              79.35724805000001,
+              10.947603049494889
+            ],
+            "end_location": [
+              79.18791975761872,
+              10.890517199490896
+            ],
+            "pickup_capacity": 5000
+          },
+          {
+            "start_location": [
+              79.32705929999999,
+              10.95712279949556
+            ],
+            "end_location": [
+              79.18791975761872,
+              10.890517199490896
+            ],
+            "pickup_capacity": 5000
+          },
+          {
+            "start_location": [
+              79.35724805000001,
+              10.947603049494889
+            ],
+            "end_location": [
+              79.18791975761872,
+              10.890517199490896
+            ],
+            "pickup_capacity": 5000
+          }
+        ],
+        "jobs": [
+          {
+            "location": [
+              79.1796626808245,
+              11.257128099517768
+            ],
+            "duration": 300,
+            "pickup_amount": 100
+          }
+        ]
+      },
+      "issues": {
+        "unassigned_agents": [
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    "features": [
+      {
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [
+                79.327059,
+                10.957123
+              ],
+              [
+                79.179267,
+                11.257171
+              ]
+            ],
+            [
+              [
+                79.179267,
+                11.257171
+              ],
+              [
+                79.188575,
+                10.890088
+              ]
+            ]
+          ]
+        },
+        "type": "Feature",
+        "properties": {
+          "agent_index": 0,
+          "time": 6888,
+          "start_time": 0,
+          "end_time": 6888,
+          "distance": 122628,
+          "legs": [
+            {
+              "time": 3090,
+              "distance": 57827,
+              "from_waypoint_index": 0,
+              "to_waypoint_index": 1,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 3090,
+                  "distance": 57827
+                }
+              ]
+            },
+            {
+              "time": 3498,
+              "distance": 64801,
+              "from_waypoint_index": 1,
+              "to_waypoint_index": 2,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 3498,
+                  "distance": 64801
+                }
+              ]
+            }
+          ],
+          "mode": "truck",
+          "actions": [
+            {
+              "index": 0,
+              "type": "start",
+              "start_time": 0,
+              "duration": 0,
+              "waypoint_index": 0
+            },
+            {
+              "index": 1,
+              "type": "job",
+              "start_time": 3090,
+              "duration": 300,
+              "job_index": 0,
+              "waypoint_index": 1
+            },
+            {
+              "index": 2,
+              "type": "end",
+              "start_time": 6888,
+              "duration": 0,
+              "waypoint_index": 2
+            }
+          ],
+          "waypoints": [
+            {
+              "original_location": [
+                79.32705929999999,
+                10.95712279949556
+              ],
+              "location": [
+                79.327059,
+                10.957123
+              ],
+              "start_time": 0,
+              "duration": 0,
+              "actions": [
+                {
+                  "index": 0,
+                  "type": "start",
+                  "start_time": 0,
+                  "duration": 0,
+                  "waypoint_index": 0
+                }
+              ],
+              "next_leg_index": 0
+            },
+            {
+              "original_location": [
+                79.1796626808245,
+                11.257128099517768
+              ],
+              "location": [
+                79.179267,
+                11.257171
+              ],
+              "start_time": 3090,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 1,
+                  "type": "job",
+                  "start_time": 3090,
+                  "duration": 300,
+                  "job_index": 0,
+                  "waypoint_index": 1
+                }
+              ],
+              "prev_leg_index": 0,
+              "next_leg_index": 1
+            },
+            {
+              "original_location": [
+                79.18791975761872,
+                10.890517199490896
+              ],
+              "location": [
+                79.188575,
+                10.890088
+              ],
+              "start_time": 6888,
+              "duration": 0,
+              "actions": [
+                {
+                  "index": 2,
+                  "type": "end",
+                  "start_time": 6888,
+                  "duration": 0,
+                  "waypoint_index": 2
+                }
+              ],
+              "prev_leg_index": 1
+            }
+          ]
+        }
+      }
+    ]
+  }

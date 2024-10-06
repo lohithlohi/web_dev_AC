@@ -1,0 +1,62 @@
+{
+    "mode": "truck",
+    "agents": [
+      {
+        "start_location": [76.88355874750398, 8.53741534939309],
+        "end_location": [76.87274951862011, 8.5391598],
+        "pickup_capacity": 5000
+      },
+      {
+        "start_location": [76.88459138610511, 8.5383448],
+        "end_location": [76.87274951862011, 8.5391598],
+        "pickup_capacity": 5000
+      },
+      {
+        "start_location": [76.88355874750398, 8.53741534939309],
+        "end_location": [76.87274951862011, 8.5391598],
+        "pickup_capacity": 5000
+      }
+    ],
+    "jobs": [
+      {
+        "location": [
+          76.8873464,
+          8.52653145
+        ],
+        "duration": 300,
+        "pickup_amount": 120
+      },
+      {
+        "location": [
+          76.88432718824534,
+          8.5300887
+        ],
+        "duration": 300,
+        "pickup_amount": 120
+      },
+      {
+        "location": [
+          76.88150977337047,
+          8.530564898831775
+        ],
+        "duration": 300,
+        "pickup_amount": 100
+      },
+      {
+        "location": [
+          76.88161581601457,
+          8.53061840383371
+        ],
+        "duration": 300,
+        "pickup_amount": 230
+      },
+      {
+        "location": [
+          76.89878302478873,
+          8.53087780068129
+        ],
+        "duration": 300,
+        "pickup_amount": 60
+      }
+    ]
+}

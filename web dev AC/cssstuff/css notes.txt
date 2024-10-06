@@ -1,0 +1,381 @@
+CSS NOTES
+
+Text Properties:-
+
+text align: left/start | center | right/end  (Relative to the parent element especially width) || justify (fixed L/S & R/E)
+
+font-weight: [100, 200....400(normal)...700(Bold)...900] (boldness of text)   || lighter | bolder (Relative to the parent element) 
+
+text-decoration: underline | overline | line-through (lines for text)
+exp: red underline | wavy overline | dotted line-through
+
+line-height: height (space) between 2 lines reletive to normal.
+
+letter-spacing: normal | 10px 
+
+font-size: 50px
+pixels: 96px = 1 inch  Not suitable for responsive websites
+Absolute: px, pt, pc, cm, mm, in
+Relative: %, em, rem, ch, ex, vw, vh + many more
+
+Percentages(%) is often used to define a "size as relative to an element's parent" object
+eg:
+width: 33.33% // relative to the parent
+margin-left:50%  // relative to the parent size (height & width)
+
+em : relative to the parent element's font-size
+describes - [relative to] => font-size of the parent, in the case of typographical properties like font-size, line-height, etc. (Relative to the parent element),
+and font-size of child's element itself, in the case of ther properties like margin, padding, width, height, etc. (Relative to the child element)
+eg: div{ font-size: 20px; }, p {font-size: 2em // 2 times of parent; padding: 1em // relative to font-size}  //div>p
+outer{ font-size: 20px;}, inner{font-size: 2em // 2 times = 40px; padding: 1em // 40px relative with inner>font-size}  //outer>inner
+if no parent element, then it is relative to the root element (html) i.e 1em = 16px (default font-size of html)
+
+
+
+rem : relative to the root element's font-size (html)
+eg: div{ font-size: 20px; }, p {font-size: 2rem} // 2 times of root(html) = 40px
+
+
+
+----------------------------------------------------------------------------------------------------
+font-style: normal | italic | oblique (angle of text)
+
+font-variant: normal | small-caps (small caps) || all-small-caps (all small caps)
+
+font-stretch: normal | condensed | semi-condensed | expanded | semi-expanded (width of text)
+
+font-family: font name (e.g. Arial, Times New Roman, etc.) || font family
+name (e.g. sans-serif, serif, monospace, etc.) || font family name (
+    e.g. Arial, Times New Roman, etc.) || font family name (e.g. sans
+    -serif, serif, monospace, etc.) || font family name (e.g.
+    Arial, Times New Roman, etc.) || font family name (e.g. sans-serif,
+    serif, monospace, etc.) || font family name (e.g. Arial, Times New
+    Roman, etc.) || font family name (e.g. sans-serif, serif, monospace
+    , etc.) || font family name (e.g. Arial, Times New Roman, etc.)
+
+
+https://github.com/apna-college/Delta/tree/main/CSS
+
+-----------------------------------------------------------------------------------------
+Universal Selector -> *{ Properties: "value"};
+
+Element Selector -> h1{ p:v };
+h1, h3{p:v};
+
+Id Selector -> #myId{ p:v };
+
+Class Selector -> .myClass{ p:v };
+
+setting color for paragraphs inside divs with the id "myId" to green
+#myId p{ color: green }
+div[id="myId"] p{ color: green }
+
+Descendant Selectors  -> h1 p{ color: green }, h1 span{ color: green }, .myClass ul li {p:v}
+Parent can access it's any child or grand childs directly (Can skkip multiple childs)
+
+Sibling Combinator  -> p + h3{ color: green } 
+h3 that comes immediately after p will be green
+decribes the element that comes after the element that is selected by the first selector.
+
+Child Combinator  -> p > h3{ color: green }
+decribes the element that is a child of the element that is selected by the first selector.
+Single direct level child only 
+
+Attribute Selector  -> input[attr="value]{ p:v }, [hreflang="en"]{ color: green },  [hreflang="en"][title="myTitle"]{ color: green }
+Selects elements based on the presence of an attribute, its value, or a combination of both.
+decribes the element that has the specified attribute and value.
+
+-----------------------------------------------------------------------------------------------------
+
+Id selector has most priority, then class selector, then tag selector (id > class > tag) _ _ _
+specificity of CSS selectors is calculated by counting the number of id, class, and tag selectors in the selector .
+The selector with the highest specificity wins.
+If two selectors have the same specificity, the one that comes last in the CSS file wins.
+
+-----------------------------------------------------------------------------------------------------
+
+
+Pseudo class  -> a:hover{ p:v }, button:hover{ p:v }
+A Keyword added to a selector that specifies a "special state" of the selected element(s)
+most used are:  :hover, :active, :focus, :checked
+other examples:- 
+:link, :visited, :hover, :active, :focus, :first-child,
+:last-child, :nth-child(n), :nth-last-child(n), :only-child,
+:onlyof-type, :root, :empty, :enabled, :disabled, :checked,
+:indeterminate, :default, :valid, :invalid, :in-range, :out-of
+:in-range, :out-of-range, :required, :optional, :read-only, 
+:read-write, :scope, :target, :root, :first-of-type, :last-of
+:lang(C), :not(C), :is(C), :where(C), :where(C), :has(C)
+
+------------------------------------------------------------------------------------------------------
+
+Pseudo elements  -> ::before, ::after, ::first-letter, ::first-line,
+::selection, ::placeholder, ::spans, ::cue, ::cue-region, ::marker,
+::grammar-error, ::invalid, ::valid, ::marker, ::placeholder, ::selection
+A keyword added to a selector that specifies a "special part" of the selected element(s)
+most used are: ::before, ::after, ::first-letter, ::first-line, ::selection
+
+------------------------------------------------------------------------------------------------------
+
+!important  -> p{ color: red !important }
+The !important keyword in CSS is used to increase the importance of a CSS rule.
+It can be used to override the styles set by other CSS rules, including those set by other styles 
+sheets or inline styles.
+
+------------------------------------------------------------------------------------------------------
+
+Cascading & Specificity ---- pending
+
+Inheritance ---- pending
+
+-----------------------------------------------------------------------------------------
+
+Box Model:
+The box model is a fundamental concept in CSS that describes the layout of an HTML element.
+It consists of four main parts: margin, border, padding, and content.
+The box model is used to calculate the width and height of an element, as well as its position
+in the document flow.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Content's height and width:  (W x H) 
+The content's height and width are determined by the content itself, not by the container.
+The content's height and width can be affected by the content's padding, border, and margin.
+The content's height and width can also be affected by the content's box-sizing property.
+The box-sizing property determines how the width and height of an element are calculated.
+The box-sizing property can be set to content-box (the default), padding-box, or border-box
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+border means the border of the content (outline)
+Border properties:
+border-style: solid, dashed, dotted, double, groove, ridge, inset, outset, none
+border-width: thin, medium, thick, 1px, 2px, 3px
+border-color: red, blue, green, #ff0000, #0000ff,
+border-radius: 10px, 20px, 30px, 40px,
+border-image: url('image.jpg'), url('image2.jpg'), url('image3.jpg'),
+border-image-source: url('image.jpg'), url('image2.jpg'), url('image3.jpg)
+
+border shorthand syntax -> border: width style color
+border: 1px solid red;  border: 1px solid #ff0000
+
+border-radius shorthand syntax -> border-radius: top-left top-right bottom-right bottom-left
+border-radius: 10px 20px 30px 40px;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+padding means the space between the content and the border
+padding properties:
+padding: 10px, 20px, 30px, 40px
+padding-top: 10px, 20px, 30px, 40px
+padding-bottom: 10px, 20px, 30px, 40px
+padding-left: 10px, 20px, 30px, 40px
+padding-right: 10px, 20px, 30px, 40px
+
+padding shorthand syntax:
+padding for all 4 sides => padding: 50px;
+top & bottom | left & right =>  padding: 1px 2px;
+top | left & right | bottom =>  padding: 1px 2px 3px;
+top right bottom left; =>  padding: 10px 20px 30px 40px;  (clockwise)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+margin means the space between the border and the next element (space between two elements)
+margin properties:
+margin: 10px, 20px, 30px, 40px
+margin-top: 10px, 20px, 30px, 40px
+margin-bottom: 10px, 20px, 30px, 40px
+margin-left: 10px, 20px, 30px, 40px
+margin-right: 10px, 20px, 30px, 40px
+
+margin shorthand syntax:
+margin for all 4 sides => margin: 50px;
+top & bottom | left & right =>  margin: 1px 2px;
+top | left & right | bottom =>  margin: 1px 2px 3px;
+top right bottom left; =>  margin: 10px 20px 30px 40px;  (clockwise)
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+display means how the element will be displayed, it can make any element behave like a block or inline element
+display properties:
+display: block, inline, inline-block, list-item, table, none
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+transitions -> pending
+
+
+----------------------------------------------------------------------------------------------------
+
+box-shadow: 10px 10px 5px orange;    // xoffset yoffset blur-radius color
+
+background-image: url('image.jpg');  // url of the image
+background-size: contain | cover | auto;  // repeat | crop | stretch/fill    (functions)  most-used: cover
+
+background-position: center | left | right | top | bottom | 50% 50%;
+background-repeat: no-repeat | repeat-x | repeat-y | repeat;  // repeat-x, repeat
+background-attachment: fixed | scroll;  // scroll, fixed
+
+-----------------------------------------------------------------------------------------------------
+
+position CSS property sets how an element is positioned in a document
+top, right, bottom, left properties are used to determine the final location of positioned elements
+
+position properties: 
+position: static, relative, absolute, fixed, sticky
+
+TBRLZ the direction of applying the force of operation like distance(100px)
+
+position: static; => default value, no positioning, element is in normal document flow (T,R,B,L,Zid properties have no effect)
+
+position: relative; top: 100px; left: 100px => element is positioned relative to itself based on TBRL from it's normal position (T,R,B L,Zid properties have effect)
+
+position: absolute; top: 100px; left: 100px => element is positioned relative to it's closest/nearest positioned ancestor, if any;
+otherwise, it is placed relative to the initial containing block/ document.  (T,R,B,L,Zid properties have effect)
+this element is removed from the normal document flow, and no space is created for the element in the page layout.
+
+position: fixed; top: 100px; left: 100px => element is positioned relative to the initial containing block established by the viewport,
+and is always visible on the screen, even when the user scrolls the page; (T,R,B,L,Zid properties have effect)
+this element is removed from the normal document flow, and no space is created for the element in the page layout.
+
+position:  sticky; top: 100px; left: 100px => element is positioned based on the normal document flow 
+at a specific position relative to its nearest ancestor with a position other than static;
+
+
+----------------------------------------------------------------------------------------------------
+
+        |
+        |
+        |
+--------|-------- main-axis
+        |
+        |
+    cross-axis
+
+
+flexbox is a 1D layout method for "arranging items" in row or columns.
+
+flexbox properties:
+flex-direction: row | row-reverse | column | column-reverse;  // direction of the
+row -> main axis, left to right
+row-reverse -> main axis, right to left
+column -> main axis, top to bottom
+column-reverse -> main axis, bottom to top
+
+-----------------------------------------------------------------------------------------------------
+
+justify-content tells how the browser "distributes spaces" between and around content items along the main-axis.
+(if sum of width of child items is less than the parent container width, the remaining space is distributed evenly)
+(if sum of width of child items is more than the parent container width, the child items are clipped (forced in same line))
+justify-content properties:
+justify-content:  flex-start | flex-end | center | space-between | space-around | space-evenly | start | end;
+justify-content:  flex-start; => items are aligned to the start of the main-axis
+justify-content:  flex-end; => items are aligned to the end of the main-axis
+justify-content:  center; => items are centered along the main-axis
+justify-content:  space-between; => items are evenly distributed along the main-axis, with equal space between each item
+justify-content:  space-around; => items are evenly distributed along the main-axis, with equal space between each item, and half the space before the first item and after the last item
+justify-content:  space-evenly; => items are evenly distributed along the main-axis, with equal space between each item, and equal space before the first item and after the last item
+justify-content:  start; => items are aligned to the start of the main-axis
+justify-content:  end; => items are aligned to the end of the main-axis
+
+-----------------------------------------------------------------------------------------------------
+
+flex-wrap sets wheather flex items are "forced onto one line or can wrap" onto multiple lines. 
+(if sum of width of all child elements is larger than parent width, childs moved to next line)
+flex-wrap properties:
+flex-wrap: nowrap | wrap | wrap-reverse;
+flex-wrap: nowrap; => items are forced onto one line (default).
+flex-wrap: wrap; => items are allowed to wrap onto multiple lines.
+flex-wrap: wrap-reverse; => items are allowed to wrap onto multiple lines, but in reverse order.
+
+-----------------------------------------------------------------------------------------------------
+
+align-items "distributes items" along the cross axis
+(if sum of height of child items is less than the parent container height, the remaining space is distributed evenly)
+(if sum of height of child items is more than the parent container height, the child items are clipped  (forced in same line))
+align-items properties:
+align-items: flex-start | flex-end | center | baseline | stretch | start | end;
+align-items: flex-start; => items are aligned to the start of the cross-axis
+align-items: flex-end; => items are aligned to the end of the cross-axis
+align-items: center; => items are centered along the cross-axis
+align-items: baseline; => items are aligned to their baseline
+align-items: stretch; => items are stretched to fill the cross-axis
+align-items: start; => items are aligned to the start of the cross-axis
+align-items: end; => items are aligned to the end of the cross-axis
+
+-----------------------------------------------------------------------------------------------------
+
+align-content sets the distribution of "space between and around" content items along a flexbox's cross-axis
+(if sum of height of child items is less than the parent container height, the remaining space is distributed evenly)
+(if sum of height of child items is more than the parent container height, the child items are clipped (forced in same line))
+align-content properties:
+align-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+align-content: flex-start; => items are aligned to the start of the cross-axis
+align-content: flex-end; => items are aligned to the end of the cross-axis.
+align-content: center; => items are centered along the cross-axis.
+align-content: space-between; => items are evenly distributed along the cross-axis, with equal space between each item.
+align-content: space-around; => items are evenly distributed along the cross-axis, with equal space between each item, and half the space before the first item and after the last item.
+align-content: space-evenly; => items are evenly distributed along the cross-axis, with equal space between each item, and equal space before the first item and after the last item.
+
+
+justy-content -> main axis ((opposite-X-opposite)) align-content -> cross axis (when there are multiple lines)
+
+align-items -> cross axis
+
+-----------------------------------------------------------------------------------------------------
+
+align-self aligns an item along the cross axis
+align-self properties:
+align-self: auto | flex-start | flex-end | center | baseline | stretch | start | end
+align-self: auto; => the item is aligned according to the align-items property
+align-self: flex-start; => the item is aligned to the start of the cross-axis
+align-self: flex-end; => the item is aligned to the end of the cross-axis
+align-self: center; => the item is centered along the cross-axis
+align-self: baseline; => the item is aligned to its baseline
+align-self: stretch; => the item is stretched to fill the cross-axis
+
+align-item -> for group of items
+align-self -> for individual item (highest priority)
+
+-----------------------------------------------------------------------------------------------------
+
+flex sizing : flex-grow, flex-shrink, flex-basis 
+
+flex-basis: auto | length | percentage
+it sets the initial main size of a flex item.
+flex-basis: auto; => the item will be sized according to its content.
+flex-basis: length; => the item will be sized to the specified length. (pixels units)
+flex-basis: percentage; => the item will be sized to the specified percentage of the parent container.
+
+flex-grow: 0 | number (used in underflow condition)
+it sets the proportion of the remaining space in the flex container that the item should take up.
+it specifies how much of the flex container's remaining space should be assigned to the flex item's main size.
+flex-grow: 0; => the item will not grow
+flex-grow: number; => the item will grow by the specified factor
+
+flex-shrink: 0 | number (used in overflow condition)
+it sets the proportion of the item's main size that should be reduced when the flex container is smaller than the sum of its items' main sizes.
+it specifies how much of the item's main size should be reduced when the flex container is smaller than the sum of its items' main sizes.
+flex-shrink: 0; => the item will not shrink
+flex-shrink: number; => the item will shrink by the specified factor
+
+flex shortands:-
+flex-grow | flex-shrink | flex basis
+flex: 2 2 100px;  => flex-grow: 2, flex-shrink: 2, flex-basis: 100
+
+flex-grow | flex-basis
+flex: 2 100px;  => flex-grow: 2, flex-basis: 100
+
+flex-basis
+flex: 100px;  => flex-basis: 100
+ 
+
+
+
+
+
+
+
+

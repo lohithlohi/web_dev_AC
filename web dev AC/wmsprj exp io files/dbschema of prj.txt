@@ -1,0 +1,75 @@
+https://dbdiagram.io/d/waste-management-system-66e9182c6dde7f4149521d5c
+
+Table users {
+  id BIGINT [pk, increment]
+  username VARCHAR(255) [unique]
+  password VARCHAR(255)
+  email VARCHAR(255) [unique]
+  role ENUM('RESIDENT', 'ADMIN')
+  created_at TIMESTAMP
+}
+
+Table bins {
+  id BIGINT [pk, increment]
+  location VARCHAR(255)
+  status ENUM('EMPTY', 'FULL', 'DAMAGED') [default: 'EMPTY']
+  fill_level INT [default: 0]
+  capacity INT
+  type ENUM('GENERAL', 'RECYCLABLE', 'COMPOSTABLE')
+  last_collected_at TIMESTAMP
+  created_at TIMESTAMP
+}
+
+Table work_trucks {
+  id BIGINT [pk, increment]
+  truck_number VARCHAR(255) [unique]
+  capacity INT
+  current_location VARCHAR(255)
+  status ENUM('AVAILABLE', 'ON_ROUTE', 'MAINTENANCE') [default: 'AVAILABLE']
+  created_at TIMESTAMP
+}
+
+Table routes {
+  id BIGINT [pk, increment]
+  name VARCHAR(255)
+  status ENUM('PENDING', 'COMPLETED') [default: 'PENDING']
+  assigned_truck_id BIGINT
+  route_data JSON
+  created_at TIMESTAMP
+}
+
+Table collection_log {
+  id BIGINT [pk, increment]
+  bin_id BIGINT [ref: > bins.id]
+  route_id BIGINT [ref: > routes.id]
+  truck_id BIGINT [ref: > work_trucks.id]
+  collected_at TIMESTAMP
+}
+
+Table waste_education {
+  id BIGINT [pk, increment]
+  title VARCHAR(255)
+  content TEXT
+  category ENUM('RECYCLING', 'COMPOSTING', 'GENERAL_WASTE')
+  created_at TIMESTAMP
+}
+
+Table notifications {
+  id BIGINT [pk, increment]
+  user_id BIGINT [ref: > users.id]
+  message TEXT
+  status ENUM('UNREAD', 'READ') [default: 'UNREAD']
+  created_at TIMESTAMP
+}
+
+Table issues {
+  id BIGINT [pk, increment]
+  bin_id BIGINT [ref: > bins.id]
+  user_id BIGINT [ref: > users.id]
+  description TEXT
+  status ENUM('REPORTED', 'RESOLVED') [default: 'REPORTED']
+  reported_at TIMESTAMP
+  resolved_at TIMESTAMP
+}
+
+Ref: routes.assigned_truck_id > work_trucks.id

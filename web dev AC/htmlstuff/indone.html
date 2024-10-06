@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ind 1 page learnings</title>
+</head>
+
+<body>
+    <h1>HTML LEARNING</h1>
+
+    <hr>
+
+    <!-- each paragraph tag gives everything in one 1 line (length dosen't matter) -->
+    <p>This is ind - 1 page line 1 p1 lohith</p>
+    <p>This is ind - 1 page line 2 p2 <b>Lohith</b></p>
+    <p>This is ind - 1 page line 2 p3 lohith</p>
+    <p>Html is not case sensitive language</p>
+
+    <!-- we won't want to chane the font size when using headings tags -->
+    <h1>i am h1</h1>
+    <h2>i am h2</h2>
+    <h3>i am h3</h3>
+    <h4>i am h4</h4>
+    <h5>i am h5</h5>
+    <h6>i am h6</h6>
+
+    <hr>
+
+    <h1>Avengers</h1>
+    <h2>Iron Man</h2>
+    <p>Also goes by the name <b>Tony Stark</b></p>
+    <h2>Captain America</h2>
+    <p>Also goes by the name <b>Steve Rogers</b></p>
+    <h2>Hulk</h2>
+    <p>Also goes by the name <b>Bruce Banner</b></p>
+
+    <hr>
+
+    <h2>LISTS</h2>
+
+    <ul>
+        <li><b>Fruits</b></li>
+        <li>orange</li>
+        <li>mango</li>
+        <li>apple</li>
+        <li>strawberry</li>
+    </ul>
+
+    <!-- type="a"    => it is Attribute="value" (Extra information for tags) -->
+    <ol type="a">
+        <li><b>Fruits</b></li>
+        <li>orange</li>
+        <ul>
+            <li>green orange</li>
+            <li>orange orange</li>
+            <li>black orange</li>
+        </ul>
+        <li>mango</li>
+        <li>apple</li>
+        <li>strawberry</li>
+    </ol>
+
+    <hr>
+
+    <!-- Ancor tag used to add links to navigate to other tabs by clicking hyperlink -->
+    <!-- absolute link => internet links; relative link => file system path links -->
+    <ol>
+        <li><a href="https://www.google.com">Click for Google</a></li>
+        <li><a href="https://www.facebook.com">Click for Facebook</a></li>
+        <li><a href="https://www.netflix.com">Click for Netflix</a></li>
+    </ol>
+
+    <hr>
+
+    <img src="https://pixlr.com/images/index/ai-image-generator-one.webp" alt="fancy girl art image" height="200px">
+    <img src="./../expimg.jpeg" alt="fox image" height="200px">
+    <img src="expimg2.jpeg" alt="fancy bird art image" height="200px">
+
+    <hr>
+
+    <b>I am Bold</b><br>
+    <i>I am Italic</i><br>
+    <u>I am Underline</u><br>
+    <s>I am Strikethrough</s><br>
+    <sup>I am Superscript</sup><br>
+    <sub>I am Subscript</sub><br>
+    <mark>I am Highlight</mark>
+
+    <p>Water: H<sub>2</sub>O</p>
+    <p>Pythogoras: a<sup>2</sup>+b<sup>2</sup>=(a+b)<sup>2</sup></p>
+    <p>Glucose: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
+
+    <hr>
+
+    <p><b>Block:</b> takes up the full-width available (whole block), starts from new line</p>
+    <ol>
+        <li>Heading Element</li>
+        <li>Paragraph Element</li>
+    </ol>
+    <p><b>Inline:</b> takes up only the space needed necessary width for the content, don't starts from new line</p>
+    <ol>
+        <li>Anchor Tag</li>
+        <li>Image Element</li>
+    </ol>
+
+    <hr>
+
+    <div>
+        <p><b>Div</b> is <mark>container</mark> used to hold other HTML elements or group elements together, a
+            <mark><b>block-level</b></mark> element</p>
+    </div>
+    <div>
+        <a href="https://www.google.com">Click for Google</a>
+        <a href="https://www.facebook.com">Click for Facebook</a>
+    </div>
+    <a href="https://www.netflix.com">Click for Netflix</a>
+
+    <hr>
+
+    <span>
+        <p><b>Span</b> is <mark>container</mark> used to hold other HTML elements or group elements together, a
+            <mark><b>inline-level</b></mark> element</p>
+    </span>
+    <span>
+        <a href="https://www.google.com">Click for Google</a>
+        <a href="https://www.facebook.com">Click for Facebook</a>
+    </span>
+    <a href="https://www.netflix.com">Click for Netflix</a>
+
+    <hr>
+
+    <!-- about semantic tags -->
+    <!-- <header></header>
+     <nav></nav>
+     <main></main>
+     <section></section>
+     <footer></footer> -->
+
+    <h4>Semantic tags means giving meaning to the HTML elements</h4>
+    <ul>
+        <li>header</li>
+        <li>nav</li>
+        <li>main</li>
+        <li>section</li>
+        <li>article</li>
+        <li>aside</li>
+    </ul>
+
+    <hr>
+
+    <!-- About HTML Entities -->
+    <p><b>HTML Entities</b> are used to display special characters => starts with '&amp;' and ends with ';'
+        <p>Example: &copy; is used to display copyright symbol</p>
+        <p>Example: &amp; is used to display ampersand symbol</p>
+        <p>Example: &lt; is used to display less than symbol</p>
+        <p>Example: &gt; is used to display greater than symbol</p>
+        <p>heart symbol: &hearts;</p>
+        <p>quote symbol: &quot;</p>
+        <p>Reference => <a href="https://cheatography.com/davechild/cheat-sheets/html-character-entities/">click
+                here</a></p>
+    </p>
+
+    <hr>
+
+    <table border="black">
+        <caption>Food Menue</caption>
+        <thead>
+            <tr>
+                <th>item</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>chips</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>maza</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Dosa</td>
+                <td>50</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <table border="black">
+        <caption>Food Menue</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">item</th>
+                <th colspan="2">price</th>
+            </tr>
+            <tr>
+                <th>INR</th>
+                <th>USD</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Frooti</td>
+                <td>10</td>
+                <td>0.14</td>
+            </tr>
+            <tr>
+                <td>Samosa</td>
+                <td>12</td>
+                <td>0.17</td>
+            </tr>
+            <tr>
+                <td>chips</td>
+                <td>35</td>
+                <td>0.42</td>
+            </tr>
+            <tr>
+                <td>maza</td>
+                <td>20</td>
+                <td>0.23</td>
+            </tr>
+            <tr>
+                <td>Dosa</td>
+                <td>50</td>
+                <td>0.5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <table border="black">
+        <tr>
+            <td rowspan="4">Info</td>
+            <td rowspan="2"></td>
+            <td colspan="2">Average</td>
+            <td rowspan="2">Red eyes</td>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td>Weight</td>
+        </tr>
+        <tr>
+            <td>Males</td>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Females</td>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <form action="">
+        color
+        <input type="color"><br>
+        text
+        <input type="text"><br>
+        number
+        <input type="number"><br>
+        password
+        <input type="password"><br>
+        Time
+        <input type="time"><br>
+        Date
+        <input type="date">
+    </form>
+
+    <hr>
+
+    <form action="">
+        <div><label for="username">Username: </label> <!-- for and id should be same -->
+            <input type="text" id="username" name="username" placeholder="enter username">
+            <!-- name is reffering lionk for backends-->
+        </div>
+        <div><label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="enter password"></div>
+        <div><label for="age">Age: </label>
+            <input type="number" id="age" placeholder="enter age"></div>
+        <div><label for="address">Address: </label>
+            <textarea name="addr" id="address" cols="30" rows="10" placeholder="enter address"></textarea>
+        </div>
+        <div><input type="button" value="click me nb1"></div>
+        <div><input type="submit" value="click me sb2"></div>
+    </form>
+
+    <hr>
+
+    <div><button type="submit">submit</button></div>
+    <div><button type="reset">reset</button></div>
+    <div><button type="menu">menu</button></div>
+    <div><button type="button">button</button></div> <!-- normal button-->
+
+    <hr>
+
+    <!-- "name" in input form is a constant "Query_selector"/"key" in the form data : searched text becomes "Value" -->
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="youtube search" name="search_query">
+        <!-- call for :- https://www.youtube.com/results?name=input -->
+        <!-- Originally: https://www.youtube.com/results?search_query=angular -->
+        <button>search</button>
+    </form>
+
+    <hr>
+
+    <form action="https://www.google.co.in/search">
+        <input type="text" placeholder="google search" name="q">
+        <button>search</button>
+    </form>
+
+    <hr>
+
+    <p>in "checkbox" multiple selection is possible (even with same names)</p>
+    <form action="/server">
+        <label for="age">i am 18+</label>
+        <!-- checked means checked by default, after submit => "on" value "age=on" || unchecked => value is "null" -->
+        <input type="checkbox" name="age" id="age" checked>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <p>In "radio" multiple selection is Not possible</p>
+    <form action="/server">
+        <!-- "name" is constant and grouping the radio buttons/switches : value varies based on input value mentions -->
+        Fruits
+        <input type="radio" name="fruits" id="apple" value="apple">
+        <label for="apple">apple</label>
+        <input type="radio" name="fruits" id="orange" value="orange">
+        <label for="orange">orange</label>
+        <input type="radio" name="fruits" id="mango" value="mango">
+        <label for="mango">mango</label>
+        <input type="radio" name="fruits" id="banana" value="banana">
+        <label for="banana">banana</label>
+        <button type="submit">submit</button>
+    </form>
+
+    <hr>
+
+    <form action="/sever">
+        <!-- selected means selected by default -->
+        Choose your profession: 
+        <select name="profession" id="profession">
+            <option>Select your option</option>
+            <option value="Student" selected>Student</option>
+            <option value="Developer">Developer</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Enterprenure">Enterprenure</option>
+        </select>
+        <button type="submit">submit</button>
+    </form>
+
+    <hr>
+
+    <!-- Attributes: step="10" varies in 10s, value="25" is the default range value -->
+    <form action="/server">
+        <label for="volume">Select your Volume level</label>
+        <input type="range" min="0" max="100" name="vol" id="volume" step="20">
+        <button type="submit">submit</button>
+    </form>
+
+    <hr>
+
+    <h3>Registration Form</h3>
+    <form action="">
+        <div>
+            <input type="text" name="fname" placeholder="First Name">
+            <input type="text" name="lname" placeholder="Last Name">
+        </div>
+        <div>
+            <label for="gender">Please select gender </label>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">others</option>
+            </select>
+        </div>
+        <div>
+            <label for="service">Do you agree to all terms of service</label>
+            <input type="checkbox" name="agree" id="service">
+            <label for="service">Yes, I agree</label>
+        </div>
+        <div>
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+
+
+
+
+
+</body>
+
+</html>

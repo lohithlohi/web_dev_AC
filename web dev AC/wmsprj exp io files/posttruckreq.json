@@ -1,0 +1,47 @@
+[
+    {
+        "truckNumber": "TRUCK001",
+        "pickupCapacity": 5000,
+        "currentLocation": "Truck Start Location 1",
+        "startLatitude": 76.88355874750398,
+        "startLongitude": 8.53741534939309,
+        "endLatitude": 76.87274951862011,
+        "endLongitude": 8.5391598
+    },
+    {
+        "truckNumber": "TRUCK002",
+        "pickupCapacity": 5000,
+        "currentLocation": "Truck Start Location 2",
+        "startLatitude": 76.88459138610511,
+        "startLongitude": 8.5383448,
+        "endLatitude": 76.87274951862011,
+        "endLongitude": 8.5391598
+    },
+    {
+        "truckNumber": "TRUCK003",
+        "pickupCapacity": 5000,
+        "currentLocation": "Truck Start Location 3",
+        "startLatitude": 76.88355874750398,
+        "startLongitude": 8.53741534939309,
+        "endLatitude": 76.87274951862011,
+        "endLongitude": 8.5391598
+    },
+    {
+        "truckNumber": "TRUCK004",
+        "pickupCapacity": 5000,
+        "currentLocation": "Truck Start Location 4",
+        "startLatitude": 76.88459138610511,
+        "startLongitude": 8.5383448,
+        "endLatitude": 76.87274951862011,
+        "endLongitude": 8.5391598
+    },
+    {
+        "truckNumber": "TRUCK005",
+        "pickupCapacity": 5000,
+        "currentLocation": "Truck Start Location 5",
+        "startLatitude": 76.88482847606,
+        "startLongitude": 8.5319898,
+        "endLatitude": 76.87274951862011,
+        "endLongitude": 8.5391598
+    }
+]

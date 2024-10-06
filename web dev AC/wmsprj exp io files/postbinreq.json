@@ -1,0 +1,82 @@
+[
+    {
+        "location": "Bin 1",
+        "latitude": 76.886209826749,
+        "longitude": 8.526991800000001,
+        "wasteAmount": 120,
+        "status": "HALF_FULL",
+        "fillLevel": 35
+    },
+    {
+        "location": "Bin 2",
+        "latitude": 76.8873464,
+        "longitude": 8.52653145,
+        "wasteAmount": 120,
+        "status": "FULL",
+        "fillLevel": 100
+    },
+    {
+        "location": "Bin 3",
+        "latitude": 76.90296696173601,
+        "longitude": 8.5356357,
+        "wasteAmount": 100,
+        "status": "QUARTERLY_FULL",
+        "fillLevel": 67
+    },
+    {
+        "location": "Bin 4",
+        "latitude": 76.88432718824534,
+        "longitude": 8.5300887,
+        "wasteAmount": 120,
+        "status": "FULL",
+        "fillLevel": 100
+    },
+    {
+        "location": "Bin 5",
+        "latitude": 76.88650759420693,
+        "longitude": 8.527663790189663,
+        "wasteAmount": 60,
+        "status": "HALF_FULL",
+        "fillLevel": 20
+    },
+    {
+        "location": "Bin 6",
+        "latitude": 76.88150977337047,
+        "longitude": 8.530564898831775,
+        "wasteAmount": 100,
+        "status": "FULL",
+        "fillLevel": 100
+    },
+    {
+        "location": "Bin 7",
+        "latitude": 76.88161581601457,
+        "longitude": 8.53061840383371,
+        "wasteAmount": 230,
+        "status": "OVERFLOWING",
+        "fillLevel": 100
+    },
+    {
+        "location": "Bin 8",
+        "latitude": 76.90240358106871,
+        "longitude": 8.53827817538729,
+        "wasteAmount": 60,
+        "status": "QUARTERLY_FULL",
+        "fillLevel": 63
+    },
+    {
+        "location": "Bin 9",
+        "latitude": 76.89878302478873,
+        "longitude": 8.53087780068129,
+        "wasteAmount": 60,
+        "status": "OVERFLOWING",
+        "fillLevel": 100
+    },
+    {
+        "location": "Bin 10",
+        "latitude": 76.8812113,
+        "longitude": 8.5378637,
+        "wasteAmount": 60,
+        "status": "EMPTY",
+        "fillLevel": 0
+    }
+]

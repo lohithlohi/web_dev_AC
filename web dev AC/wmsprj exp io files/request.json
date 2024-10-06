@@ -1,0 +1,58 @@
+{
+    "type": "HTTP POST",
+    "url": "https://api.geoapify.com/v1/routeplanner?apiKey=64994d6242224963b530456ac5455578",
+    "headers": "Content-Type=application/json",
+    "body": {
+      "mode": "drive",
+      "agents": [
+        {
+          "start_location": [
+            79.32486701602942,
+            10.954941249495402
+          ],
+          "end_location": [
+            79.27711761733624,
+            10.86906015
+          ],
+          "pickup_capacity": 5000
+        },
+        {
+          "start_location": [
+            79.32705929999999,
+            10.95712279949556
+          ],
+          "end_location": [
+            79.27711761733624,
+            10.86906015
+          ],
+          "pickup_capacity": 5000
+        }
+      ],
+      "jobs": [
+        {
+          "location": [
+            79.20617225196821,
+            10.89728815
+          ],
+          "duration": 300,
+          "pickup_amount": 60
+        },
+        {
+          "location": [
+            79.20626380732395,
+            10.8972692
+          ],
+          "duration": 300,
+          "pickup_amount": 60
+        },
+        {
+          "location": [
+            79.27721328658257,
+            10.920414198795694
+          ],
+          "duration": 300,
+          "pickup_amount": 60
+        }
+      ]
+    }
+  }

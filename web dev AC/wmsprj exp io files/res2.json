@@ -1,0 +1,1334 @@
+{
+    "type": "FeatureCollection",
+    "properties": {
+      "mode": "truck",
+      "params": {
+        "mode": "truck",
+        "agents": [
+          {
+            "start_location": [
+              76.88355874750398,
+              8.53741534939309
+            ],
+            "end_location": [
+              76.87274951862011,
+              8.5391598
+            ],
+            "pickup_capacity": 5000
+          },
+          {
+            "start_location": [
+              76.88459138610511,
+              8.5383448
+            ],
+            "end_location": [
+              76.87274951862011,
+              8.5391598
+            ],
+            "pickup_capacity": 5000
+          },
+          {
+            "start_location": [
+              76.88355874750398,
+              8.53741534939309
+            ],
+            "end_location": [
+              76.87274951862011,
+              8.5391598
+            ],
+            "pickup_capacity": 5000
+          },
+          {
+            "start_location": [
+              76.88459138610511,
+              8.5383448
+            ],
+            "end_location": [
+              76.87274951862011,
+              8.5391598
+            ],
+            "pickup_capacity": 5000
+          },
+          {
+            "start_location": [
+              76.88482847606,
+              8.5319898
+            ],
+            "end_location": [
+              76.87274951862011,
+              8.5391598
+            ],
+            "pickup_capacity": 5000
+          }
+        ],
+        "jobs": [
+          {
+            "location": [
+              76.886209826749,
+              8.526991800000001
+            ],
+            "duration": 300,
+            "pickup_amount": 120
+          },
+          {
+            "location": [
+              76.8873464,
+              8.52653145
+            ],
+            "duration": 300,
+            "pickup_amount": 120
+          },
+          {
+            "location": [
+              76.90296696173601,
+              8.5356357
+            ],
+            "duration": 300,
+            "pickup_amount": 100
+          },
+          {
+            "location": [
+              76.88432718824534,
+              8.5300887
+            ],
+            "duration": 300,
+            "pickup_amount": 120
+          },
+          {
+            "location": [
+              76.88650759420693,
+              8.527663790189663
+            ],
+            "duration": 300,
+            "pickup_amount": 60
+          },
+          {
+            "location": [
+              76.88150977337047,
+              8.530564898831775
+            ],
+            "duration": 300,
+            "pickup_amount": 100
+          },
+          {
+            "location": [
+              76.88161581601457,
+              8.53061840383371
+            ],
+            "duration": 300,
+            "pickup_amount": 230
+          },
+          {
+            "location": [
+              76.90240358106871,
+              8.53827817538729
+            ],
+            "duration": 300,
+            "pickup_amount": 60
+          },
+          {
+            "location": [
+              76.89878302478873,
+              8.53087780068129
+            ],
+            "duration": 300,
+            "pickup_amount": 60
+          },
+          {
+            "location": [
+              76.8812113,
+              8.5378637
+            ],
+            "duration": 300,
+            "pickup_amount": 60
+          },
+          {
+            "location": [
+              76.8812715995043,
+              8.538171527868416
+            ],
+            "duration": 300,
+            "pickup_amount": 60
+          },
+          {
+            "location": [
+              76.88169389553929,
+              8.537939302018252
+            ],
+            "duration": 300,
+            "pickup_amount": 60
+          },
+          {
+            "location": [
+              76.8803835,
+              8.5381174
+            ],
+            "duration": 300,
+            "pickup_amount": 120
+          },
+          {
+            "location": [
+              76.87997085055085,
+              8.538477005836551
+            ],
+            "duration": 300,
+            "pickup_amount": 60
+          },
+          {
+            "location": [
+              76.88003682909955,
+              8.537648599393101
+            ],
+            "duration": 300,
+            "pickup_amount": 120
+          },
+          {
+            "location": [
+              76.88002102399727,
+              8.539049599393113
+            ],
+            "duration": 300,
+            "pickup_amount": 120
+          },
+          {
+            "location": [
+              76.8972938878977,
+              8.527393849392974
+            ],
+            "duration": 300,
+            "pickup_amount": 230
+          },
+          {
+            "location": [
+              76.89773962597829,
+              8.527328349392974
+            ],
+            "duration": 300,
+            "pickup_amount": 230
+          }
+        ]
+      },
+      "issues": {
+        "unassigned_agents": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "features": [
+      {
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [
+                76.885273,
+                8.53172
+              ],
+              [
+                76.88467,
+                8.530399
+              ]
+            ],
+            [
+              [
+                76.88467,
+                8.530399
+              ],
+              [
+                76.897258,
+                8.52713
+              ]
+            ],
+            [
+              [
+                76.897258,
+                8.52713
+              ],
+              [
+                76.897886,
+                8.527283
+              ]
+            ],
+            [
+              [
+                76.897886,
+                8.527283
+              ],
+              [
+                76.898783,
+                8.530878
+              ]
+            ],
+            [
+              [
+                76.898783,
+                8.530878
+              ],
+              [
+                76.902759,
+                8.535707
+              ]
+            ],
+            [
+              [
+                76.902759,
+                8.535707
+              ],
+              [
+                76.902404,
+                8.538278
+              ]
+            ],
+            [
+              [
+                76.902404,
+                8.538278
+              ],
+              [
+                76.887421,
+                8.526358
+              ]
+            ],
+            [
+              [
+                76.887421,
+                8.526358
+              ],
+              [
+                76.886076,
+                8.52685
+              ]
+            ],
+            [
+              [
+                76.886076,
+                8.52685
+              ],
+              [
+                76.886507,
+                8.527664
+              ]
+            ],
+            [
+              [
+                76.886507,
+                8.527664
+              ],
+              [
+                76.88151,
+                8.530565
+              ]
+            ],
+            [
+              [
+                76.88151,
+                8.530565
+              ],
+              [
+                76.881616,
+                8.530618
+              ]
+            ],
+            [
+              [
+                76.881616,
+                8.530618
+              ],
+              [
+                76.881271,
+                8.538172
+              ]
+            ],
+            [
+              [
+                76.881271,
+                8.538172
+              ],
+              [
+                76.880384,
+                8.538117
+              ]
+            ],
+            [
+              [
+                76.880384,
+                8.538117
+              ],
+              [
+                76.88007,
+                8.537601
+              ]
+            ],
+            [
+              [
+                76.88007,
+                8.537601
+              ],
+              [
+                76.879971,
+                8.538477
+              ]
+            ],
+            [
+              [
+                76.879971,
+                8.538477
+              ],
+              [
+                76.881694,
+                8.537939
+              ]
+            ],
+            [
+              [
+                76.881694,
+                8.537939
+              ],
+              [
+                76.880054,
+                8.538837
+              ]
+            ],
+            [
+              [
+                76.880054,
+                8.538837
+              ],
+              [
+                76.881211,
+                8.537864
+              ]
+            ],
+            [
+              [
+                76.881211,
+                8.537864
+              ],
+              [
+                76.872489,
+                8.538994
+              ]
+            ]
+          ]
+        },
+        "type": "Feature",
+        "properties": {
+          "agent_index": 4,
+          "time": 7504,
+          "start_time": 0,
+          "end_time": 7504,
+          "distance": 21307,
+          "legs": [
+            {
+              "time": 14,
+              "distance": 97,
+              "from_waypoint_index": 0,
+              "to_waypoint_index": 1,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 14,
+                  "distance": 97
+                }
+              ]
+            },
+            {
+              "time": 163,
+              "distance": 2204,
+              "from_waypoint_index": 1,
+              "to_waypoint_index": 2,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 163,
+                  "distance": 2204
+                }
+              ]
+            },
+            {
+              "time": 12,
+              "distance": 92,
+              "from_waypoint_index": 2,
+              "to_waypoint_index": 3,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 12,
+                  "distance": 92
+                }
+              ]
+            },
+            {
+              "time": 78,
+              "distance": 669,
+              "from_waypoint_index": 3,
+              "to_waypoint_index": 4,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 78,
+                  "distance": 669
+                }
+              ]
+            },
+            {
+              "time": 265,
+              "distance": 2512,
+              "from_waypoint_index": 4,
+              "to_waypoint_index": 5,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 265,
+                  "distance": 2512
+                }
+              ]
+            },
+            {
+              "time": 212,
+              "distance": 283,
+              "from_waypoint_index": 5,
+              "to_waypoint_index": 6,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 212,
+                  "distance": 283
+                }
+              ]
+            },
+            {
+              "time": 270,
+              "distance": 3533,
+              "from_waypoint_index": 6,
+              "to_waypoint_index": 7,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 270,
+                  "distance": 3533
+                }
+              ]
+            },
+            {
+              "time": 6,
+              "distance": 43,
+              "from_waypoint_index": 7,
+              "to_waypoint_index": 8,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 6,
+                  "distance": 43
+                }
+              ]
+            },
+            {
+              "time": 2,
+              "distance": 24,
+              "from_waypoint_index": 8,
+              "to_waypoint_index": 9,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 2,
+                  "distance": 24
+                }
+              ]
+            },
+            {
+              "time": 96,
+              "distance": 1078,
+              "from_waypoint_index": 9,
+              "to_waypoint_index": 10,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 96,
+                  "distance": 1078
+                }
+              ]
+            },
+            {
+              "time": 0,
+              "distance": 13,
+              "from_waypoint_index": 10,
+              "to_waypoint_index": 11,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 0,
+                  "distance": 13
+                }
+              ]
+            },
+            {
+              "time": 265,
+              "distance": 3878,
+              "from_waypoint_index": 11,
+              "to_waypoint_index": 12,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 265,
+                  "distance": 3878
+                }
+              ]
+            },
+            {
+              "time": 0,
+              "distance": 7,
+              "from_waypoint_index": 12,
+              "to_waypoint_index": 13,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 0,
+                  "distance": 7
+                }
+              ]
+            },
+            {
+              "time": 0,
+              "distance": 0,
+              "from_waypoint_index": 13,
+              "to_waypoint_index": 14,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 0,
+                  "distance": 0
+                }
+              ]
+            },
+            {
+              "time": 2,
+              "distance": 29,
+              "from_waypoint_index": 14,
+              "to_waypoint_index": 15,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 2,
+                  "distance": 29
+                }
+              ]
+            },
+            {
+              "time": 5,
+              "distance": 56,
+              "from_waypoint_index": 15,
+              "to_waypoint_index": 16,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 5,
+                  "distance": 56
+                }
+              ]
+            },
+            {
+              "time": 5,
+              "distance": 50,
+              "from_waypoint_index": 16,
+              "to_waypoint_index": 17,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 5,
+                  "distance": 50
+                }
+              ]
+            },
+            {
+              "time": 2,
+              "distance": 25,
+              "from_waypoint_index": 17,
+              "to_waypoint_index": 18,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 2,
+                  "distance": 25
+                }
+              ]
+            },
+            {
+              "time": 707,
+              "distance": 6714,
+              "from_waypoint_index": 18,
+              "to_waypoint_index": 19,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 707,
+                  "distance": 6714
+                }
+              ]
+            }
+          ],
+          "mode": "truck",
+          "actions": [
+            {
+              "index": 0,
+              "type": "start",
+              "start_time": 0,
+              "duration": 0,
+              "waypoint_index": 0
+            },
+            {
+              "index": 1,
+              "type": "job",
+              "start_time": 14,
+              "duration": 300,
+              "job_index": 3,
+              "waypoint_index": 1
+            },
+            {
+              "index": 2,
+              "type": "job",
+              "start_time": 477,
+              "duration": 300,
+              "job_index": 16,
+              "waypoint_index": 2
+            },
+            {
+              "index": 3,
+              "type": "job",
+              "start_time": 789,
+              "duration": 300,
+              "job_index": 17,
+              "waypoint_index": 3
+            },
+            {
+              "index": 4,
+              "type": "job",
+              "start_time": 1167,
+              "duration": 300,
+              "job_index": 8,
+              "waypoint_index": 4
+            },
+            {
+              "index": 5,
+              "type": "job",
+              "start_time": 1732,
+              "duration": 300,
+              "job_index": 2,
+              "waypoint_index": 5
+            },
+            {
+              "index": 6,
+              "type": "job",
+              "start_time": 2244,
+              "duration": 300,
+              "job_index": 7,
+              "waypoint_index": 6
+            },
+            {
+              "index": 7,
+              "type": "job",
+              "start_time": 2814,
+              "duration": 300,
+              "job_index": 1,
+              "waypoint_index": 7
+            },
+            {
+              "index": 8,
+              "type": "job",
+              "start_time": 3120,
+              "duration": 300,
+              "job_index": 0,
+              "waypoint_index": 8
+            },
+            {
+              "index": 9,
+              "type": "job",
+              "start_time": 3422,
+              "duration": 300,
+              "job_index": 4,
+              "waypoint_index": 9
+            },
+            {
+              "index": 10,
+              "type": "job",
+              "start_time": 3818,
+              "duration": 300,
+              "job_index": 5,
+              "waypoint_index": 10
+            },
+            {
+              "index": 11,
+              "type": "job",
+              "start_time": 4118,
+              "duration": 300,
+              "job_index": 6,
+              "waypoint_index": 11
+            },
+            {
+              "index": 12,
+              "type": "job",
+              "start_time": 4683,
+              "duration": 300,
+              "job_index": 10,
+              "waypoint_index": 12
+            },
+            {
+              "index": 13,
+              "type": "job",
+              "start_time": 4983,
+              "duration": 300,
+              "job_index": 12,
+              "waypoint_index": 13
+            },
+            {
+              "index": 14,
+              "type": "job",
+              "start_time": 5283,
+              "duration": 300,
+              "job_index": 14,
+              "waypoint_index": 14
+            },
+            {
+              "index": 15,
+              "type": "job",
+              "start_time": 5585,
+              "duration": 300,
+              "job_index": 13,
+              "waypoint_index": 15
+            },
+            {
+              "index": 16,
+              "type": "job",
+              "start_time": 5890,
+              "duration": 300,
+              "job_index": 11,
+              "waypoint_index": 16
+            },
+            {
+              "index": 17,
+              "type": "job",
+              "start_time": 6195,
+              "duration": 300,
+              "job_index": 15,
+              "waypoint_index": 17
+            },
+            {
+              "index": 18,
+              "type": "job",
+              "start_time": 6497,
+              "duration": 300,
+              "job_index": 9,
+              "waypoint_index": 18
+            },
+            {
+              "index": 19,
+              "type": "end",
+              "start_time": 7504,
+              "duration": 0,
+              "waypoint_index": 19
+            }
+          ],
+          "waypoints": [
+            {
+              "original_location": [
+                76.88482847606,
+                8.5319898
+              ],
+              "location": [
+                76.885273,
+                8.53172
+              ],
+              "start_time": 0,
+              "duration": 0,
+              "actions": [
+                {
+                  "index": 0,
+                  "type": "start",
+                  "start_time": 0,
+                  "duration": 0,
+                  "waypoint_index": 0
+                }
+              ],
+              "next_leg_index": 0
+            },
+            {
+              "original_location": [
+                76.88432718824534,
+                8.5300887
+              ],
+              "location": [
+                76.88467,
+                8.530399
+              ],
+              "start_time": 14,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 1,
+                  "type": "job",
+                  "start_time": 14,
+                  "duration": 300,
+                  "job_index": 3,
+                  "waypoint_index": 1
+                }
+              ],
+              "prev_leg_index": 0,
+              "next_leg_index": 1
+            },
+            {
+              "original_location": [
+                76.8972938878977,
+                8.527393849392974
+              ],
+              "location": [
+                76.897258,
+                8.52713
+              ],
+              "start_time": 477,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 2,
+                  "type": "job",
+                  "start_time": 477,
+                  "duration": 300,
+                  "job_index": 16,
+                  "waypoint_index": 2
+                }
+              ],
+              "prev_leg_index": 1,
+              "next_leg_index": 2
+            },
+            {
+              "original_location": [
+                76.89773962597829,
+                8.527328349392974
+              ],
+              "location": [
+                76.897886,
+                8.527283
+              ],
+              "start_time": 789,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 3,
+                  "type": "job",
+                  "start_time": 789,
+                  "duration": 300,
+                  "job_index": 17,
+                  "waypoint_index": 3
+                }
+              ],
+              "prev_leg_index": 2,
+              "next_leg_index": 3
+            },
+            {
+              "original_location": [
+                76.89878302478873,
+                8.53087780068129
+              ],
+              "location": [
+                76.898783,
+                8.530878
+              ],
+              "start_time": 1167,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 4,
+                  "type": "job",
+                  "start_time": 1167,
+                  "duration": 300,
+                  "job_index": 8,
+                  "waypoint_index": 4
+                }
+              ],
+              "prev_leg_index": 3,
+              "next_leg_index": 4
+            },
+            {
+              "original_location": [
+                76.90296696173601,
+                8.5356357
+              ],
+              "location": [
+                76.902759,
+                8.535707
+              ],
+              "start_time": 1732,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 5,
+                  "type": "job",
+                  "start_time": 1732,
+                  "duration": 300,
+                  "job_index": 2,
+                  "waypoint_index": 5
+                }
+              ],
+              "prev_leg_index": 4,
+              "next_leg_index": 5
+            },
+            {
+              "original_location": [
+                76.90240358106871,
+                8.53827817538729
+              ],
+              "location": [
+                76.902404,
+                8.538278
+              ],
+              "start_time": 2244,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 6,
+                  "type": "job",
+                  "start_time": 2244,
+                  "duration": 300,
+                  "job_index": 7,
+                  "waypoint_index": 6
+                }
+              ],
+              "prev_leg_index": 5,
+              "next_leg_index": 6
+            },
+            {
+              "original_location": [
+                76.8873464,
+                8.52653145
+              ],
+              "location": [
+                76.887421,
+                8.526358
+              ],
+              "start_time": 2814,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 7,
+                  "type": "job",
+                  "start_time": 2814,
+                  "duration": 300,
+                  "job_index": 1,
+                  "waypoint_index": 7
+                }
+              ],
+              "prev_leg_index": 6,
+              "next_leg_index": 7
+            },
+            {
+              "original_location": [
+                76.886209826749,
+                8.526991800000001
+              ],
+              "location": [
+                76.886076,
+                8.52685
+              ],
+              "start_time": 3120,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 8,
+                  "type": "job",
+                  "start_time": 3120,
+                  "duration": 300,
+                  "job_index": 0,
+                  "waypoint_index": 8
+                }
+              ],
+              "prev_leg_index": 7,
+              "next_leg_index": 8
+            },
+            {
+              "original_location": [
+                76.88650759420693,
+                8.527663790189663
+              ],
+              "location": [
+                76.886507,
+                8.527664
+              ],
+              "start_time": 3422,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 9,
+                  "type": "job",
+                  "start_time": 3422,
+                  "duration": 300,
+                  "job_index": 4,
+                  "waypoint_index": 9
+                }
+              ],
+              "prev_leg_index": 8,
+              "next_leg_index": 9
+            },
+            {
+              "original_location": [
+                76.88150977337047,
+                8.530564898831775
+              ],
+              "location": [
+                76.88151,
+                8.530565
+              ],
+              "start_time": 3818,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 10,
+                  "type": "job",
+                  "start_time": 3818,
+                  "duration": 300,
+                  "job_index": 5,
+                  "waypoint_index": 10
+                }
+              ],
+              "prev_leg_index": 9,
+              "next_leg_index": 10
+            },
+            {
+              "original_location": [
+                76.88161581601457,
+                8.53061840383371
+              ],
+              "location": [
+                76.881616,
+                8.530618
+              ],
+              "start_time": 4118,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 11,
+                  "type": "job",
+                  "start_time": 4118,
+                  "duration": 300,
+                  "job_index": 6,
+                  "waypoint_index": 11
+                }
+              ],
+              "prev_leg_index": 10,
+              "next_leg_index": 11
+            },
+            {
+              "original_location": [
+                76.8812715995043,
+                8.538171527868416
+              ],
+              "location": [
+                76.881271,
+                8.538172
+              ],
+              "start_time": 4683,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 12,
+                  "type": "job",
+                  "start_time": 4683,
+                  "duration": 300,
+                  "job_index": 10,
+                  "waypoint_index": 12
+                }
+              ],
+              "prev_leg_index": 11,
+              "next_leg_index": 12
+            },
+            {
+              "original_location": [
+                76.8803835,
+                8.5381174
+              ],
+              "location": [
+                76.880384,
+                8.538117
+              ],
+              "start_time": 4983,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 13,
+                  "type": "job",
+                  "start_time": 4983,
+                  "duration": 300,
+                  "job_index": 12,
+                  "waypoint_index": 13
+                }
+              ],
+              "prev_leg_index": 12,
+              "next_leg_index": 13
+            },
+            {
+              "original_location": [
+                76.88003682909955,
+                8.537648599393101
+              ],
+              "location": [
+                76.88007,
+                8.537601
+              ],
+              "start_time": 5283,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 14,
+                  "type": "job",
+                  "start_time": 5283,
+                  "duration": 300,
+                  "job_index": 14,
+                  "waypoint_index": 14
+                }
+              ],
+              "prev_leg_index": 13,
+              "next_leg_index": 14
+            },
+            {
+              "original_location": [
+                76.87997085055085,
+                8.538477005836551
+              ],
+              "location": [
+                76.879971,
+                8.538477
+              ],
+              "start_time": 5585,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 15,
+                  "type": "job",
+                  "start_time": 5585,
+                  "duration": 300,
+                  "job_index": 13,
+                  "waypoint_index": 15
+                }
+              ],
+              "prev_leg_index": 14,
+              "next_leg_index": 15
+            },
+            {
+              "original_location": [
+                76.88169389553929,
+                8.537939302018252
+              ],
+              "location": [
+                76.881694,
+                8.537939
+              ],
+              "start_time": 5890,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 16,
+                  "type": "job",
+                  "start_time": 5890,
+                  "duration": 300,
+                  "job_index": 11,
+                  "waypoint_index": 16
+                }
+              ],
+              "prev_leg_index": 15,
+              "next_leg_index": 16
+            },
+            {
+              "original_location": [
+                76.88002102399727,
+                8.539049599393113
+              ],
+              "location": [
+                76.880054,
+                8.538837
+              ],
+              "start_time": 6195,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 17,
+                  "type": "job",
+                  "start_time": 6195,
+                  "duration": 300,
+                  "job_index": 15,
+                  "waypoint_index": 17
+                }
+              ],
+              "prev_leg_index": 16,
+              "next_leg_index": 17
+            },
+            {
+              "original_location": [
+                76.8812113,
+                8.5378637
+              ],
+              "location": [
+                76.881211,
+                8.537864
+              ],
+              "start_time": 6497,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 18,
+                  "type": "job",
+                  "start_time": 6497,
+                  "duration": 300,
+                  "job_index": 9,
+                  "waypoint_index": 18
+                }
+              ],
+              "prev_leg_index": 17,
+              "next_leg_index": 18
+            },
+            {
+              "original_location": [
+                76.87274951862011,
+                8.5391598
+              ],
+              "location": [
+                76.872489,
+                8.538994
+              ],
+              "start_time": 7504,
+              "duration": 0,
+              "actions": [
+                {
+                  "index": 19,
+                  "type": "end",
+                  "start_time": 7504,
+                  "duration": 0,
+                  "waypoint_index": 19
+                }
+              ],
+              "prev_leg_index": 18
+            }
+          ]
+        }
+      }
+    ]
+  }

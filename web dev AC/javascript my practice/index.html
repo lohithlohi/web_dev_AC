@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM practice</title>
+</head>
+<body>
+    <div>
+        <p>Here is a paragraph of text inside a div.</p>
+        <div>
+            <p>here is another paragraph of text nested inside another div.</p>
+        </div>
+    </div>
+    <div>
+        <button>Toggle Style</button>
+    </div>
+
+    <div class="listdiv"></div>
+
+    <div><h3>i am after the list</h3></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // let listdiv = document.getElementsByClassName('listdiv');
+
+        let listdiv = document.querySelector('.listdiv');
+        let h2text = document.createElement('h2');
+        h2text.textContent = 'I am a List Heading!';
+
+        // for (let i = 0; i < listdiv.length; i++) {
+        //     listdiv[i].appendChild(h2text);
+        // }
+        listdiv.appendChild(h2text);
+
+        let olele = document.createElement('ol');
+        
+        // let liele =  document.createElement('li');
+        // let text = document.createTextNode("i am item 1");
+        // liele.appendChild(text);
+        // olele.appendChild(liele);
+        // listdiv.appendChild(olele);
+        
+        let topics = [
+            "HTML",  "CSS", "JavaScript", "React", "Node", "Mongo",
+            "springboot",  "python", "java", "c++", "c#"
+
+        ];
+
+        for (const topic of topics) {
+            let li = document.createElement('li');
+            li.innerHTML = topic; //`${topic}`;
+            // let text = document.createTextNode(topic);
+            // li.appendChild(text);
+
+            li.classList.add('liele'); // adding class
+            li.style.cursor = "pointer";
+            li.addEventListener('click', (e) => {
+                li.style.backgroundColor = "blue";
+                li.style.color = "white";
+                console.log(e);
+            });
+
+            olele.appendChild(li);
+        }
+        
+        olele.type="a";
+        
+        listdiv.appendChild(olele);
+        
+        // let lastli = olele.removeChild(olele.lastChild)
+        let lastolele = olele.lastChild;
+        lastolele.remove();
+
+        
+
+    </script>
+</body>
+</html>

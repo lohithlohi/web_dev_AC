@@ -1,0 +1,338 @@
+{
+    "type": "FeatureCollection",
+    "properties": {
+      "mode": "drive",
+      "params": {
+        "mode": "drive",
+        "agents": [
+          {
+            "start_location": [
+              79.32486701602942,
+              10.954941249495402
+            ],
+            "end_location": [
+              79.27711761733624,
+              10.86906015
+            ],
+            "pickup_capacity": 5000
+          },
+          {
+            "start_location": [
+              79.32705929999999,
+              10.95712279949556
+            ],
+            "end_location": [
+              79.27711761733624,
+              10.86906015
+            ],
+            "pickup_capacity": 5000
+          }
+        ],
+        "jobs": [
+          {
+            "location": [
+              79.20617225196821,
+              10.89728815
+            ],
+            "duration": 300,
+            "pickup_amount": 60
+          },
+          {
+            "location": [
+              79.20626380732395,
+              10.8972692
+            ],
+            "duration": 300,
+            "pickup_amount": 60
+          },
+          {
+            "location": [
+              79.27721328658257,
+              10.920414198795694
+            ],
+            "duration": 300,
+            "pickup_amount": 60
+          }
+        ]
+      },
+      "issues": {
+        "unassigned_agents": [
+          1
+        ]
+      }
+    },
+    "features": [
+      {
+        "geometry": {
+          "type": "MultiLineString",
+          "coordinates": [
+            [
+              [
+                79.325106,
+                10.955307
+              ],
+              [
+                79.277213,
+                10.920414
+              ]
+            ],
+            [
+              [
+                79.277213,
+                10.920414
+              ],
+              [
+                79.206264,
+                10.897115
+              ]
+            ],
+            [
+              [
+                79.206264,
+                10.897115
+              ],
+              [
+                79.206328,
+                10.897148
+              ]
+            ],
+            [
+              [
+                79.206328,
+                10.897148
+              ],
+              [
+                79.277381,
+                10.869045
+              ]
+            ]
+          ]
+        },
+        "type": "Feature",
+        "properties": {
+          "agent_index": 0,
+          "time": 2943,
+          "start_time": 0,
+          "end_time": 2943,
+          "distance": 33134,
+          "legs": [
+            {
+              "time": 491,
+              "distance": 8156,
+              "from_waypoint_index": 0,
+              "to_waypoint_index": 1,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 491,
+                  "distance": 8156
+                }
+              ]
+            },
+            {
+              "time": 633,
+              "distance": 10064,
+              "from_waypoint_index": 1,
+              "to_waypoint_index": 2,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 633,
+                  "distance": 10064
+                }
+              ]
+            },
+            {
+              "time": 0,
+              "distance": 8,
+              "from_waypoint_index": 2,
+              "to_waypoint_index": 3,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 0,
+                  "distance": 8
+                }
+              ]
+            },
+            {
+              "time": 919,
+              "distance": 14906,
+              "from_waypoint_index": 3,
+              "to_waypoint_index": 4,
+              "steps": [
+                {
+                  "from_index": 0,
+                  "to_index": 1,
+                  "time": 919,
+                  "distance": 14906
+                }
+              ]
+            }
+          ],
+          "mode": "drive",
+          "actions": [
+            {
+              "index": 0,
+              "type": "start",
+              "start_time": 0,
+              "duration": 0,
+              "waypoint_index": 0
+            },
+            {
+              "index": 1,
+              "type": "job",
+              "start_time": 491,
+              "duration": 300,
+              "job_index": 2,
+              "waypoint_index": 1
+            },
+            {
+              "index": 2,
+              "type": "job",
+              "start_time": 1424,
+              "duration": 300,
+              "job_index": 0,
+              "waypoint_index": 2
+            },
+            {
+              "index": 3,
+              "type": "job",
+              "start_time": 1724,
+              "duration": 300,
+              "job_index": 1,
+              "waypoint_index": 3
+            },
+            {
+              "index": 4,
+              "type": "end",
+              "start_time": 2943,
+              "duration": 0,
+              "waypoint_index": 4
+            }
+          ],
+          "waypoints": [
+            {
+              "original_location": [
+                79.32486701602942,
+                10.954941249495402
+              ],
+              "location": [
+                79.325106,
+                10.955307
+              ],
+              "start_time": 0,
+              "duration": 0,
+              "actions": [
+                {
+                  "index": 0,
+                  "type": "start",
+                  "start_time": 0,
+                  "duration": 0,
+                  "waypoint_index": 0
+                }
+              ],
+              "next_leg_index": 0
+            },
+            {
+              "original_location": [
+                79.27721328658257,
+                10.920414198795694
+              ],
+              "location": [
+                79.277213,
+                10.920414
+              ],
+              "start_time": 491,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 1,
+                  "type": "job",
+                  "start_time": 491,
+                  "duration": 300,
+                  "job_index": 2,
+                  "waypoint_index": 1
+                }
+              ],
+              "prev_leg_index": 0,
+              "next_leg_index": 1
+            },
+            {
+              "original_location": [
+                79.20617225196821,
+                10.89728815
+              ],
+              "location": [
+                79.206264,
+                10.897115
+              ],
+              "start_time": 1424,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 2,
+                  "type": "job",
+                  "start_time": 1424,
+                  "duration": 300,
+                  "job_index": 0,
+                  "waypoint_index": 2
+                }
+              ],
+              "prev_leg_index": 1,
+              "next_leg_index": 2
+            },
+            {
+              "original_location": [
+                79.20626380732395,
+                10.8972692
+              ],
+              "location": [
+                79.206328,
+                10.897148
+              ],
+              "start_time": 1724,
+              "duration": 300,
+              "actions": [
+                {
+                  "index": 3,
+                  "type": "job",
+                  "start_time": 1724,
+                  "duration": 300,
+                  "job_index": 1,
+                  "waypoint_index": 3
+                }
+              ],
+              "prev_leg_index": 2,
+              "next_leg_index": 3
+            },
+            {
+              "original_location": [
+                79.27711761733624,
+                10.86906015
+              ],
+              "location": [
+                79.277381,
+                10.869045
+              ],
+              "start_time": 2943,
+              "duration": 0,
+              "actions": [
+                {
+                  "index": 4,
+                  "type": "end",
+                  "start_time": 2943,
+                  "duration": 0,
+                  "waypoint_index": 4
+                }
+              ],
+              "prev_leg_index": 3
+            }
+          ]
+        }
+      }
+    ]
+  }

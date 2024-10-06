@@ -1,0 +1,87 @@
+{
+  "mode": "truck",
+  "agents": [
+    {
+      "start_location": [77.6097223, 12.97357],
+      "end_location": [77.60766336909577, 12.965021349675533],
+      "pickup_capacity": 5000
+    },
+    {
+      "start_location": [77.6097223, 12.97357],
+      "end_location": [77.60766336909577, 12.965021349675533],
+      "pickup_capacity": 8000
+    },
+    {
+      "start_location": [77.6140413, 12.9732807],
+      "end_location": [77.60766336909577, 12.965021349675533],
+      "pickup_capacity": 5000
+    },
+    {
+      "start_location": [77.6140413, 12.9732807],
+      "end_location": [77.60766336909577, 12.965021349675533],
+      "pickup_capacity": 5000
+    },
+    {
+      "start_location": [77.6140413, 12.9732807],
+      "end_location": [77.60766336909577, 12.965021349675533],
+      "pickup_capacity": 5000
+    }
+  ],
+  "jobs": [
+    {
+      "location": [77.61627557552586, 12.971531800000001],
+      "duration": 300,
+      "pickup_amount": 60
+    },
+    {
+      "location": [77.61531252513309, 12.972179],
+      "duration": 300,
+      "pickup_amount": 230
+    },
+    {
+      "location": [77.61368323469134, 12.97215365],
+      "duration": 300,
+      "pickup_amount": 60
+    },
+    {
+      "location": [77.6151954110558, 12.972900450000001],
+      "duration": 300,
+      "pickup_amount": 60
+    },
+    {
+      "location": [77.61379085068103, 12.97244005],
+      "duration": 300,
+      "pickup_amount": 60
+    },
+    {
+      "location": [77.6178821, 12.97207],
+      "duration": 300,
+      "pickup_amount": 60
+    },
+    {
+      "location": [77.61730425, 12.97265814967634],
+      "duration": 300,
+      "pickup_amount": 60
+    },
+    {
+      "location": [77.61317494656308, 12.97437864967652],
+      "duration": 300,
+      "pickup_amount": 60
+    },
+    {
+      "location": [77.61267213733552, 12.974457849676522],
+      "duration": 300,
+      "pickup_amount": 100
+    },
+    {
+      "location": [77.6127759, 12.974718199676552],
+      "duration": 300,
+      "pickup_amount": 230
+    },
+    {
+      "location": [77.6137158, 12.97447679967653],
+      "duration": 300,
+      "pickup_amount": 230
+    }
+  ]
+}
